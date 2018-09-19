@@ -9,7 +9,7 @@ function conexiones($usuario, $clave) {
  	//sentencia sql para consultar el nombre del usuario
 	//$clave_encriptada = MD5($clave);
 	
-	$sql = "SELECT * FROM tbl_usuarios_porteria WHERE BINARY usuario = '". $usuario ."' AND  clave ='". $clave ."' ";
+	$sql = "SELECT * FROM tbl_usuarios_porteria WHERE usuario = '". $usuario ."' AND  clave ='". $clave ."' ";
 	//ejecucion de la sentencia anterior
 	$ejecutar_sql=mysqli_query($conectar,$sql);
 	//si existe inicia una sesion y guarda el nombre del usuario
