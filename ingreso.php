@@ -177,7 +177,7 @@
                       <td style="width: 12%">
                           <?php
                           $ch = curl_init();
-                          curl_setopt($ch, CURLOPT_URL, 'http://201.234.242.21:6532/expal/querisVisitantes.php');
+                          curl_setopt($ch, CURLOPT_URL, 'http://localhost:6161/WSExpal/webresources/WebSecciones');
                           curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                           $output = curl_exec($ch) or die(curl_error($ch));
                           curl_close($ch);
@@ -234,7 +234,7 @@
                   <b>NO</b> <input type="radio" name="optionsRadios" id="optionsRadios" value="0" >
             </div>
     </div>
-    <div  style="width:40%; solid;display: inline-block">
+    <div  style="width:40%; display: inline-block">
         <label>
             VIDEO BEAN:
         </label>
